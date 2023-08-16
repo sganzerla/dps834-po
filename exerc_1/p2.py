@@ -20,7 +20,7 @@ class InvestProbl2:
         mdl.Add(mdl.Sum(x[i] for i in emprestimos) <= 12)
         
         # restrição  2
-        mdl.Add(mdl.Sum(x[i] for i in emprestimos if i >= 4) >= 4)
+        mdl.Add(mdl.Sum(x[i] for i in emprestimos if i >= 4) >= 4.8)
         
   
         # restrição  3
@@ -32,7 +32,7 @@ class InvestProbl2:
             print(f"O lucro máximo é: {mdl.Objective().Value():.2f}")
             for i in emprestimos:
                 # if x[i].solution_value() > 0:
-                    print(f"Empréstimo {tipo[i]} com juros de {(juros[i]* 100):.2f}% com inadimplência de {(inadimplencia[i] * 100):.2f}%, investir R$ {x[i].solution_value():.2f} milhões.")
+                    print(f"Empréstimo {tipo[i]} com juros de {(juros[i]* 100):.2f}% com inadimplência de {(inadimplencia[i] * 100):.2f}%, liberar crédito R$ {x[i].solution_value():.2f} milhões.")
 
 if __name__ == "__main__":
     

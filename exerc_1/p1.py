@@ -29,10 +29,10 @@ class InvestProbl:
         status = mdl.Solve()
         
         if status == pywraplp.Solver.OPTIMAL:
-            print("O lucro máximo é:", mdl.Objective().Value())
+            print(f"O lucro máximo é: {mdl.Objective().Value():.2f}")
             for i in investimentos:
                 # if x[i].solution_value() > 0:
-                    print("Investimento", i, " de risco", risco[i], "com retorno de", (retorno[i] * 100), "% em", vencimento[i], "anos, investir", (x[i].solution_value() * 100), "%.")
+                    print(f"Investimento {i}, de risco {risco[i]}, com retorno de {(retorno[i] * 100):.2f}% em {vencimento[i]} anos. Investir {(x[i].solution_value() * 100)}%.")
 
 if __name__ == "__main__":
     
