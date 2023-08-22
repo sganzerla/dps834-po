@@ -1,9 +1,13 @@
 from ortools.linear_solver import pywraplp
 # python -m pip install ortools
+
+
+# a) deve-se escolher a melhor combinação de títulos para investir 
+# de modo que obtenha-se o máximo lucro possível.
+
 class InvestProbl:
     def __init__(self):
        
-       # a) deve-se escolher a melhor combinação de títulos para investir de modo que obtenha-se o máximo lucro possível.
        
         # dados
         self.investimentos = [i for i in range(1, 7)]
@@ -61,7 +65,7 @@ class InvestProbl:
 
         # restrição 4
         # soma de todos os investimentos deve ser 100%
-        self.mdl.Add(self.mdl.Sum(self.x[i] for i in self.investimentos) == 1)
+        self.mdl.Add(self.mdl.Sum(self.x[i] for i in self.investimentos) <= 1)
         
 
 
