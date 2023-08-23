@@ -72,4 +72,11 @@ class InvestProbl2:
 if __name__ == "__main__":
     
     model = InvestProbl2()
+    
+    # O lucro máximo é: 1.41
+    # Empréstimo pessoal com juros de 14.00% com inadimplência de 10.00%, liberar crédito R$ 0.34 milhões.
+    # Empréstimo automóvel com juros de 13.00% com inadimplência de 7.00%, liberar crédito R$ 0.00 milhões.
+    # Empréstimo habitação com juros de 12.00% com inadimplência de 3.00%, liberar crédito R$ 6.86 milhões.
+    # Empréstimo agrícola com juros de 12.50% com inadimplência de 5.00%, liberar crédito R$ 4.80 milhões.
+    # Empréstimo comercial com juros de 10.00% com inadimplência de 2.00%, liberar crédito R$ 0.00 milhões.
  

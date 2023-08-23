@@ -76,4 +76,11 @@ class InvestProbl:
 if __name__ == "__main__":
     
     model = InvestProbl()
- 
+    
+    # O lucro máximo é: 0.13
+    # Investimento 1, de risco 1, com retorno de 8.70% em 15 anos. Investir 1.00%.
+    # Investimento 2, de risco 3, com retorno de 9.50% em 12 anos. Investir 25.00%.
+    # Investimento 3, de risco 4, com retorno de 12.00% em 8 anos. Investir 0.00%.
+    # Investimento 4, de risco 2, com retorno de 9.00% em 7 anos. Investir 24.00%.
+    # Investimento 5, de risco 4, com retorno de 13.00% em 11 anos. Investir 25.00%.
+    # Investimento 6, de risco 5, com retorno de 20.00% em 5 anos. Investir 25.00%.
