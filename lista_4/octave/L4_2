@@ -1,0 +1,38 @@
+# Created by Octave 6.4.0, Sat Sep 23 00:14:59 2023 -03 <alisson@amd>
+# name: S
+# type: matrix
+# rows: 4
+# columns: 6
+ -4 -8 0 0 0 0
+ 3 2 1 0 0 18
+ 1 2 0 1 0 5
+ 1 0 0 0 1 4
+
+
+# name: S0
+# type: matrix
+# rows: 4
+# columns: 6
+ -4 -8 0 0 0 0
+ 3 2 1 0 0 18
+ 1 2 0 1 0 5
+ 1 0 0 0 1 4
+
+
+# name: S1
+# type: matrix
+# rows: 4
+# columns: 6
+ 0 0 0 4 0 20
+ 2 0 1 -1 0 13
+ 0.5 1 0 0.5 0 2.5
+ 1 0 0 0 1 4
+
+
+# name: ans
+# type: matrix
+# rows: 1
+# columns: 6
+ 2 0 1 -1 0 13
+
+
