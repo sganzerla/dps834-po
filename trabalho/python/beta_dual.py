@@ -35,7 +35,7 @@ class BetaD:
             self.mdl.Add(1 * self.y1 + 1 * self.y2 - 4 * self.y3 - 5 * self.y4 <= 9)
             
             self.mdl.Add(1 * self.y1 + 0 * self.y2 - 4 * self.y3 - 6 * self.y4 <= 7)
-
+            
 
     def solve(self):
    
@@ -43,10 +43,10 @@ class BetaD:
             
             if status == pywraplp.Solver.OPTIMAL:
                 print(f"FO: {self.mdl.Objective().Value():.2f}")
-                print(f'Cada carro produzido aumenta a FO em y_1 = {self.y1.solution_value():.2f}')
+                print(f'Cada carro produzido aumenta a FO em y_1 = R$ {self.y1.solution_value():.2f}')
                 print(f'Cada carro produzido em Vitória aumenta a FO y_2 = {self.y2.solution_value():.2f}')
-                print(f'y_3 = {self.y3.solution_value():.2f}')
-                print(f'Cada carro produzido utiliza mão de obra de y_4 = {self.y4.solution_value():.2f}')
+                print(f'O custo das horas da mão de obra para produzir cada carro custa y_3 = {self.y3.solution_value():.2f}')
+                print(f'O custo da tonelada de matéria prima para produzir cada carro y_4 = {self.y4.solution_value():.2f}')
             else:
                 print(f"Problema não resolvido: {status}")
 
