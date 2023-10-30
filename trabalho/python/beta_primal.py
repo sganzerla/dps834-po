@@ -33,14 +33,6 @@ class BetaP:
         #  2 + 3 + 4 + 4 <= 3300
         #  3 + 4 + 5 + 6 <= 4000
         
-        # colocando na forma padrão
-        #15 + 10 + 9 + 7
-        #  1 + 1 + 1 + 1 == 1000
-        #  0 + 0 + 1 + 0 >= 400
-        # -2 - 3 - 4 - 4 >= -3300
-        # -3 - 4 - 5 - 6 >= -4000
-        
-        
     def const(self):
         
             # deve construir 1000 automoveis
